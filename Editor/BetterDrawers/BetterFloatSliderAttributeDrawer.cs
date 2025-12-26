@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace BetterAttributes.Editor
 {
-    [CustomPropertyDrawer(typeof(BetterSliderAttribute))]
-    public sealed class BetterSliderAttributeDrawer : BetterDrawerBase<BetterSliderAttribute>
+    [CustomPropertyDrawer(typeof(BetterFloatSliderAttribute))]
+    public sealed class BetterFloatSliderAttributeDrawer : BetterDrawerBase<BetterSliderAttribute>
     {
-        protected override SerializedPropertyType[] ValidTypes => new[] { SerializedPropertyType.Integer };
+        protected override SerializedPropertyType[] ValidTypes => new[] { SerializedPropertyType.Float };
         
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
@@ -21,7 +21,7 @@ namespace BetterAttributes.Editor
             Rect sliderPosition = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
             
             BetterSliderAttribute betterSliderAttribute = (BetterSliderAttribute)attribute;
-            property.intValue = EditorGUI.IntSlider(sliderPosition, label, property.intValue, betterSliderAttribute.Min, betterSliderAttribute.Max);
+            property.floatValue = EditorGUI.Slider(sliderPosition, label, property.floatValue, betterSliderAttribute.Min, betterSliderAttribute.Max);
             
             EditorGUI.EndProperty();
         }
