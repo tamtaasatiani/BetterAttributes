@@ -1,0 +1,16 @@
+{
+  "name": "com.tamtaasatiani.betterattributes",
+  "version": "0.1.0",
+  "displayName": "Better Attributes",
+  "description": "Custom attributes for the Editor",
+  "unity": "6000.0",
+  "unityRelease": "60f1",
+  "documentationUrl": "https://github.com/tamtaasatiani/BetterAttributes/blob/main/README.md",
+  "changelogUrl": "",
+  "licensesUrl": "https://github.com/tamtaasatiani/BetterAttributes/blob/main/LICENSE",
+  "author": {
+    "name": "Tamta Asatiani",
+    "email": "tamta@geolab.edu.ge",
+    "url": "https://github.com/tamtaasatiani"
+  }
+}
