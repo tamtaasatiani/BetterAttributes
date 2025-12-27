@@ -4,7 +4,7 @@ using UnityEngine;
 namespace BetterAttributes.Editor
 {
     [CustomPropertyDrawer(typeof(BetterSliderAttribute))]
-    public sealed class BetterSliderAttributeDrawer : BetterDrawerBase<BetterSliderAttribute>
+    public class BetterSliderAttributeDrawer : BetterDrawerBase<BetterSliderAttribute>
     {
         protected override SerializedPropertyType[] ValidTypes => new[] { SerializedPropertyType.Integer };
         

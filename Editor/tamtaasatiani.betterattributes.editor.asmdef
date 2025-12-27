@@ -1,0 +1,16 @@
+{
+    "name": "tamtaasatiani.betterattributes.editor",
+    "rootNamespace": "",
+    "references": [
+      "tamtaasatiani.betterattributes.runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,11 +1,10 @@
 using System;
-using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
 namespace BetterAttributes.Editor
 {
-    public class BetterDrawerBase<T> : PropertyDrawer where T : PropertyAttribute
+    public class BetterDrawerBase<T> : PropertyDrawer where T : BetterAttributeBase
     {
         protected virtual SerializedPropertyType[] ValidTypes => new[] { SerializedPropertyType.ObjectReference };
 

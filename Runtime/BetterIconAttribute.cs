@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace BetterAttributes
 {
-    public sealed class BetterIconAttribute : PropertyAttribute
+    public class BetterIconAttribute : BetterAttributeBase
     {
         /*
         public readonly Sprite Icon;
