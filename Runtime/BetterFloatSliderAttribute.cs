@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace BetterAttributes
 {
-    public class BetterFloatSliderAttribute : BetterAttributeBase
+    public sealed class BetterFloatSliderAttribute : BetterAttributeBase
     {
         public readonly float Min;
         public readonly float Max;
