@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace BetterAttributes
+namespace BetterAttributes.Runtime
 {
     public sealed class BetterIconAttribute : BetterAttributeBase
     {

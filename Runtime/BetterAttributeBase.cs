@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BetterAttributes
+namespace BetterAttributes.Runtime
 {
     public class BetterAttributeBase : PropertyAttribute
     {
