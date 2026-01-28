@@ -20,13 +20,18 @@ namespace BetterAttributes.Editor
                 return;
             }
             
-            Rect fieldPosition = new Rect(position.x, position.y - EditorGUIUtility.singleLineHeight, position.width, EditorGUIUtility.singleLineHeight);
+            Rect fieldPosition = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
             
             //RequireAttribute requireAttribute = (RequireAttribute)attribute;
             if (property.objectReferenceValue == null) GUI.backgroundColor = Color.red;
-            EditorGUILayout.PropertyField(property);
+            EditorGUI.PropertyField(fieldPosition, property);
             
             EditorGUI.EndProperty();
+        }
+        
+        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+        {
+            return EditorGUIUtility.singleLineHeight;
         }
     }
 }
