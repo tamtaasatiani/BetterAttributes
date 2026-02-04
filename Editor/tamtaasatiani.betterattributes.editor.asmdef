@@ -2,9 +2,11 @@
     "name": "tamtaasatiani.betterattributes.editor",
     "rootNamespace": "",
     "references": [
-      "tamtaasatiani.betterattributes.runtime"
+        "tamtaasatiani.betterattributes.runtime"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
